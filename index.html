@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-fuchsia-300">
+    <div class="flex h-[100vh] text-white">
+        <div class="left bg-neutral-900 w-2/12 flex justify-center">
+            <span class="logo p-2">
+
+            <h2 class="text-xl font-extrabold">SummarifyMe</h2>
+            </span>
+    </div>
+    <div class="right1 w-10/12 flex flex-col justify-center p-4">
+        <h1
+        class="flex mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white"
+      >
+        Unlock the Power of Summarization: Transform Text into Insights!
+      </h1>
+<div class="input-field w-3/4">
+    <form action="/analyse" method="POST">
+        <!-- <label
+        for="inputText"
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >Your message</label -->
+        <textarea name="rawtext" id="inputText" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" cols="30" rows="10" placeholder="Write your thoughts here ..."></textarea>
+        <button type="submit"  class="transition ease-in-out delay-150 duration-300 hover:scale-110  hover:-translate-y-1 text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-2 mb-2">Generate Abstract</button>
+    </form>
+</div>
+</body>
+</html>
